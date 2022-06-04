@@ -10,7 +10,7 @@ const moduleResolverPlugin = [
 ];
 
 module.exports = function (api) {
-  const plugins = [moduleResolverPlugin, "react-native-reanimated/plugin"];
+  const plugins = [moduleResolverPlugin];
   const isProduction = api.env("production");
 
   if (isProduction) {
